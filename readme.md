@@ -21,11 +21,9 @@ In summary, the changes I made were:
 - Replaced `SibSp` and `Parch` which are all indications of travelling with family/companions with a single feature `With_Family`.
 - Filled missing information on `Embarked` and `Ages` with aggregations over `Sex` and `Pclass` (Passenger class)
 
-![plot-sex](images/gender_barplot.png)
 
 ![plotclass](images/pclass.png)
 
-(Statistical confirmation that the parameters of `Sex` and `Pclass` (passenger class) strongly impact the target `Survived`. Not a surprise, especially if you've watched the movie.)
 
 
 # Baseline Model and Results
