@@ -14,12 +14,10 @@ def class_balancing(df_, target_class, reduce_larger_class=False):
     display(y.value_counts())
 
     # find the larger value
-
     imbalance = np.abs(y.value_counts()[0] - y.value_counts()[1])
     smaller_class = np.argmin(y.value_counts()) 
 
     print(f"We need {imbalance} new {smaller_class} records to offset class imbalance.")
-
 
     filter = y == smaller_class
     tmp = df[filter].sample(n=imbalance, replace=True)
