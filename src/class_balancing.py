@@ -1,9 +1,8 @@
 def class_balancing(df_, target_class, reduce_larger_class=False):
     """Takes df, checks for class imbalances
-    returns X and yq2 with proper balancing
+    returns X and y with proper balancing
     Only works for binary classes at the moment.
     """
-
 
     if reduce_larger_class:
         Print ("Does not have this function yet")
