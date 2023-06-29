@@ -1,4 +1,7 @@
 # Introduction
+
+*"Are you ready to go back to the Titanic?"*
+
 Active Learning is a strategy employed in training machine learning algorithms on insufficient data. Data can be insufficient for several reasons including the cost of acquiring it, or the cost of correctly labelling the data. Active learning is an iterative process of training the alogithm, using human intervention at the end of iteration to optimize the learning process. The data is fed to the algorithm in batches. At the end of each training batch, the algorithm selects the most interesting data points, and queries the human agent (teacher or oracle) to correctly label that data. This data is now fed with the next batch back into the algorithm for re-training. This cycle continues until the model achieves acceptable accuracy.
 
 I conducted this experiment on the dataset, provided by Kaggle for the popular ML Challenge on the Survival of the Titanic. As we all know, on April 15, 1912 during her maiden voyage, the "unsinkable" RMS Titanic sank 1 hour after colliding wiht an iceberge. It is one of the most infamous maritime disasters in history, and has inspired several cultural references including the Award-winning James Cameron movie of the same name. 1502 out of 2224 passengers died in the sinking. Some people were more likely to survive than others. The Kaggle challenge is to develop an algorithm that can predict survival rates. It is an interesting challenge and highly recommended to first-time data science and machine learning students.
